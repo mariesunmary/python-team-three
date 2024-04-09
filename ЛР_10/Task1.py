@@ -1,3 +1,4 @@
+# Костян О. 1-ий студент
 try:
     # Відкриття файлу для запису
     with open('questions1.txt', 'w') as file:
