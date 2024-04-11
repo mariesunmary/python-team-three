@@ -74,13 +74,13 @@ def main():
                 subjects_grades[subject.strip()] = mark
 
             add_entry(students_performance, group, last_name, first_name, middle_name, course, subjects_grades)
-            pass
+            
 
         elif choice == '2':
             group = input("Введіть номер групи: ")
             last_name = input("Введіть прізвище студента для видалення: ")
             remove_entry(students_performance, group, last_name)
-            pass
+            
 
         elif choice == '3':
             display_students(students_performance)
