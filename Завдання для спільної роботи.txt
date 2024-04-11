@@ -14,5 +14,4 @@
 Студент 3
 split(): 
 len(): 
-translate(): 
 lower(): 
