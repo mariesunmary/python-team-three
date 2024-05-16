@@ -34,3 +34,30 @@ try:
         json.dump(rows, file, indent=4)
 except IOError as e:
     print(f"An error occurred during file handling: {e}")
+
+# Коноплянчено Д. Студент №2
+# нові записи
+new_data = [
+    {"name": "Michael", "age": 45, "city": "San Francisco"},
+    {"name": "Oleksiy", "age": 19, "city": "Seattle"},
+    {"name": "David", "age": 25, "city": "Boston"}
+]
+
+# читання з .json файлу
+try:
+    with open(json_file_path, mode='r') as file:
+        json_data = json.load(file)
+
+    # об'єднуємо з новими записами
+    json_data.extend(new_data)
+
+    # запис у .csv файл
+    with open(csv_file_path, mode='w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=json_data[0].keys())
+        writer.writeheader()
+        writer.writerows(json_data)
+
+except IOError as e:
+    print(f"An error occurred during file handling: {e}")
+except json.JSONDecodeError as e:
+    print(f"An error occurred while decoding the JSON file: {e}")
