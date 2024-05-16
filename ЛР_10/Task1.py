@@ -1,7 +1,7 @@
 # Костян О. 1-ий студент
 try:
     # Відкриття файлу для запису
-    with open('questions1.txt', 'w') as file:
+    with open('questions1.txt', 'w', encoding='utf-8') as file:
         # Запис прізвища та питання першого студента
         file.write("Прізвище першого студента: Костян\n")
         file.write("Питання від першого студента: Як створити список у Python?\n")
