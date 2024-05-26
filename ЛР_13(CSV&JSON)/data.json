@@ -13,5 +13,35 @@
         "name": "Peter",
         "age": "34",
         "city": "Chicago"
+    },
+    {
+        "name": "Michael",
+        "age": "45",
+        "city": "San Francisco"
+    },
+    {
+        "name": "Oleksiy",
+        "age": "19",
+        "city": "Seattle"
+    },
+    {
+        "name": "David",
+        "age": "25",
+        "city": "Boston"
+    },
+    {
+        "name": "Sam",
+        "age": 25,
+        "city": "London"
+    },
+    {
+        "name": "Solid",
+        "age": 59,
+        "city": "Milan"
+    },
+    {
+        "name": "David",
+        "age": 25,
+        "city": "Boston"
     }
 ]
